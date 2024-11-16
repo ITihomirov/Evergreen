@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-container {
+  @apply max-w-[1300px] mx-auto xxl:px-0 xl:px-[50px] lg:px-[30px] sm:px-[20px] px-[10px];
+}
+.need-container {
+  @apply max-w-[1300px] mx-auto xxl:px-0 lg:px-[50px] sm:px-[20px] sm:pr-[0] pl-[10px] pr-[0];
+}
+
+.button {
+  @apply py-[14px] md:py-5 md:px-16 px-[40px]  border border-[#000] md:shadow-[7px_6px_0px_0px_rgba(0,0,0,1)] shadow-[5px_3.5px_0px_0px_rgba(0,0,0,1)] md:text-[20px] text-[12px]  leading-[110%] font-semibold duration-300 text-center flex justify-center;
+  font-family: "Inter", "sans-serif";
+}
+.header-button {
+  @apply xl:py-[20px] py-[14px] xl:px-16 lg:px-[40px] px-5 w-fit border border-[#000] md:shadow-[7px_6px_0px_0px_rgba(0,0,0,1)] shadow-[3px_2px_0px_0px_rgba(0,0,0,1)] lg:text-[20px] text-[12px]  leading-[110%] font-semibold duration-300 text-center whitespace-nowrap;
+  font-family: "Inter", "sans-serif";
+}
+.header-button:hover{
+  transform: translate(7px, 6px) !important;
+  box-shadow: none;
+  text-align: initial;
+  align-items: initial;
+}
+
+.shadowC {
+  -webkit-box-shadow: 9px 6px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 9px 6px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 9px 6px 0px 0px rgba(0, 0, 0, 1);
+}
+@media(max-width: 768px){
+  .shadowC {
+    -webkit-box-shadow: 10px 8px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow:10px 8px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: 10px 8px 0px 0px rgba(0, 0, 0, 1);
+  }
+}
+.button:hover {
+  transform: translate(7px, 6px) !important;
+  box-shadow: none;
+  text-align: initial;
+  align-items: initial;
+}
+
+.inter-family {
+  font-family: "Inter", "sans-serif";
+}
+.libre-family {
+  font-family: "Libre Franklin", "sans-serif";
+}
+.work-family {
+  font-family: "Work Sans", "sans-serif";
+}
+
+.copy {
+  background: #000;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.copy-wrap {
+  white-space: nowrap;
+  will-change: transform;
+  animation: copy 30s linear infinite;
+}
+
+@keyframes copy {
+  from {
+    transform: translate(0deg);
+  }
+  to {
+    transform: translate(calc(-100%));
+  }
+}
